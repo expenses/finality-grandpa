@@ -75,7 +75,7 @@ pub mod voter;
 #[cfg(feature = "std")]
 mod bridge_state;
 
-#[cfg(any(test, feature = "test-helpers"))]
+#[cfg(all(test, feature = "test-helpers"))]
 mod testing;
 
 #[cfg(any(test, feature = "fuzz-helpers"))]
